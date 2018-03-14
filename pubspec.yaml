@@ -61,4 +61,4 @@ flutter:
   fonts:
     - family: Nunito
       fonts:
-        -asset: assets/Nunito.ttf
+        - asset: assets/Nunito.ttf
