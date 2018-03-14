@@ -1,0 +1,57 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatelessWidget {
+  static String tag = 'home-page';
+
+  @override
+  Widget build(BuildContext context) {
+    final omrobbie = Hero(
+      tag: 'hero',
+      child: Padding(
+        padding: EdgeInsets.all(16.0),
+        child: CircleAvatar(
+          radius: 72.0,
+          backgroundColor: Colors.transparent,
+          backgroundImage: AsssetImage('assets/omrobbie.jpg'),
+        ),
+      ),
+    );
+
+    final welcome = Padding(
+      padding: EdgeInsets.all(8.0),
+      child: Text(
+        'Welcome omrobbie!',
+        style: TextStyle(
+          fontSize: 28.0,
+          color: Colors.white,
+        ),
+      ),
+    );
+
+    final lorem = Padding(
+      padding: EdgeInsets.all(8.0),
+      child: Text(
+        'Green juice lumbersexual wolf paleo mumblecore. DIY etsy wayfarers cold-pressed bushwick marfa twee hexagon. Scenester roof party af schlitz kinfolk lo-fi art party wolf freegan try-hard pickled keytar. Blue bottle mixtape bushwick gochujang, tote bag activated charcoal tattooed franzen. Retro actually bushwick, leggings ethical keffiyeh whatever affogato. Man braid tacos jean shorts ramps, umami humblebrag hexagon.',
+        style: TextStyle(fontSize: 16.0, color: Colors.white),
+      ),
+    );
+
+    final body = Container(
+      width: MediaQuery.of(context).size.width,
+      padding: EdgeInsets.all(28.0),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(colors: [
+          Colors.blue,
+          Colors.lightBlueAccent,
+        ]),
+      ),
+      child: Column(
+        children: <Widget>[omrobbie, welcome, lorem],
+      ),
+    );
+
+    return Scaffold(
+      body: body,
+    );
+  }
+}
