@@ -8,3 +8,8 @@ Aplikasi login_app dengan menggunakan flutter. Artikel lengkap ada disini https:
 ## Preview Android
 <img src="https://github.com/omrobbie/flutter_login_app/blob/master/screenshot/android1.png" width="256">&nbsp;&nbsp;
 <img src="https://github.com/omrobbie/flutter_login_app/blob/master/screenshot/android2.png" width="256">
+
+## Proses Build
+Setelah dicoba di 3 IDE (Android Studio, VSCode, IntelliJ IDEA), cuma di Microsoft Visual Code yang benar-benar berhasil sampai tampil di simulator iOS dan emulator Android. Coba cek settingnya, mungkin ada yang kurang. Hmm..
+
+<img src="https://github.com/omrobbie/flutter_login_app/blob/master/screenshot/build.png">
